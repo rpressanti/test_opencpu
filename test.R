@@ -8,5 +8,5 @@ cleanData <- data.frame(cleanData, fit$cluster)
 cleanData <- subset(cleanData, select = c(Row, fit.cluster))
 cleanData <- merge(x = data, y = cleanData, by = "Row", all.x = TRUE)
 cleanData <- subset(cleanData, select = -c(Row))
-return(cleanData)
+return(cleanData )
 }
